@@ -10,10 +10,11 @@ nav_order: 5
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Redirecting to CV...</title>
+    <title>Opening CV...</title>
     <script>
         window.open('/assets/pdf/Spencer%20Hill%20CV.pdf', '_blank');
-        window.location.href = '/';
+        // Go back to previous page without changing the current page
+        window.history.back();
     </script>
 </head>
 <body>
