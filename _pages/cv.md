@@ -1,6 +1,9 @@
 ---
 layout: none
 permalink: /cv/
+title: cv
+nav: true
+nav_order: 5
 ---
 
 <!DOCTYPE html>
