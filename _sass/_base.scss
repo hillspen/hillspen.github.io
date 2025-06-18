@@ -389,9 +389,11 @@ ul.task-list input[type="checkbox"] {
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
+  text-decoration: none;
 
   &:hover {
     color: var(--global-hover-color);
+    text-decoration: none;
   }
 }
 

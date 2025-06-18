@@ -4,7 +4,13 @@
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
-    setThemeSetting("light");
+    // If in system mode, switch to the opposite of current system theme
+    const userPref = window.matchMedia;
+    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
+      setThemeSetting("light");
+    } else {
+      setThemeSetting("dark");
+    }
   } else if (themeSetting == "light") {
     setThemeSetting("dark");
   } else {
