@@ -38,9 +38,9 @@ ninja.data = [{
           description: "Created a quantum machine learning model capable of generating handwritten digits.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-3d-human-body-generation",
+          title: '3D Human Body Generation',
+          description: "Applied the TreeGAN architecture to generate 3D point clouds of the human body.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";
             },},{
