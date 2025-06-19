@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Some cool projects.",
+          description: "Some of the projects I&#39;ve done.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -28,25 +28,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2.html";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "projects-nonlinear-transform-coding-using-artificial-neural-networks",
-          title: 'Nonlinear transform coding using artificial neural networks',
-          description: "with background image",
+            },},{id: "projects-nonlinear-transform-coding-using-neural-networks",
+          title: 'Nonlinear transform coding using neural networks',
+          description: "Undergraduate thesis project on compressing CT scans using neural networks.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-quantum-generative-adversarial-networks",
+          title: 'Quantum Generative Adversarial Networks',
+          description: "Created a quantum machine learning model capable of generating handwritten digits.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
             },},{id: "projects-project-3-with-very-long-name",
