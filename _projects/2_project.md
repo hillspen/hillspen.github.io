@@ -1,25 +1,33 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Quantum Generative Adversarial Networks
+description: Created a quantum machine learning model capable of generating handwritten digits.
+img: assets/img/QGAN.png
 importance: 2
-category: work
+category:
 giscus_comments: true
+code: https://github.com/hillspen/qgan
+paper: /assets/pdf/QGAN_CUCAI.pdf
+slides: /assets/pdf/QGAN Slides.pdf
 ---
+
+<div class="mb-3">
+  {% if page.paper %}
+    <a href="{{ page.paper }}" class="btn btn-sm btn-project-resource mr-1" target="_blank" role="button">Paper</a>
+  {% endif %}
+    {% if page.code %}
+    <a href="{{ page.code }}" class="btn btn-sm btn-project-resource mr-1" target="_blank" role="button">Code</a>
+  {% endif %}
+  {% if page.slides %}
+    <a href="{{ page.slides }}" class="btn btn-sm btn-project-resource mr-1" target="_blank" role="button">Slides</a>
+  {% endif %}
+</div>
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

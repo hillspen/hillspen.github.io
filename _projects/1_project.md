@@ -1,81 +1,37 @@
 ---
 layout: page
-title: Nonlinear transform coding using artificial neural networks
-description: with background image
-img: assets/img/12.jpg
+title: Nonlinear transform coding using neural networks
+description: Undergraduate thesis project on compressing CT scans using neural networks.
+img: assets/img/CTScan.png
 importance: 1
-category: work
-related_publications: true
+category:
+related_publications:
+code:
+thesis: /assets/pdf/MTHEThesis.pdf
+slides: /assets/pdf/ThesisPresentation.pdf
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<div class="mb-3">
+  {% if page.code %}
+    <a href="{{ page.code }}" class="btn btn-sm btn-project-resource mr-1" target="_blank" role="button">Code</a>
+  {% endif %}
+  {% if page.thesis %}
+    <a href="{{ page.thesis }}" class="btn btn-sm btn-project-resource mr-1" target="_blank" role="button">Thesis</a>
+  {% endif %}
+  {% if page.slides %}
+    <a href="{{ page.slides }}" class="btn btn-sm btn-project-resource mr-1" target="_blank" role="button">Slides</a>
+  {% endif %}
+</div>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Standard lossy image compression techniques rely on linear transform coding, which leverages orthogonal transformations to decorrelate and compress an image. Nonlinear transform coding offers a more versatile option capable of achieving better decorrelation (and therefore, better performance).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/NTC.png" title="Nonlinear transform coding" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Comparison of linear transform coding (left) and nonlinear transform coding (right) for a banana-shaped distribution. Lines indicate quantization bins, with dots the codebook vectors. Image credit Ballé et al. "Nonlinear Transform Coding," (Oct 2020).  
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+This project mathematically formulates a nonlinear transform coding system as a pair of analysis and synthesis transforms, each parametrized by a neural network. The end-to-end system is trained to compress CT scans, an application of particular importance to low-bandwidth areas without easy access to health care services. A custom loss function is used to balance the distortion (difference) between the original and compressed image with the rate (size) of the compressed image. This project was implemented in Python, using Tensorflow for the neural networks.

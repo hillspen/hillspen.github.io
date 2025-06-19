@@ -28,3 +28,20 @@ $max-content-width: {{ site.max_width }};
   color: #4fc3f7 !important;
   text-decoration: underline;
 }
+
+.project-card {
+  cursor: pointer;
+}
+
+.btn-project-resource {
+  color: #222 !important;
+  background-color: #fff !important;
+  border: 1.5px solid #222 !important;
+  box-shadow: none !important;
+}
+.btn-project-resource:hover, .btn-project-resource:focus {
+  color: var(--global-theme-color) !important;
+  background-color: #fff !important;
+  border-color: var(--global-theme-color) !important;
+  text-decoration: none;
+}

@@ -10,7 +10,6 @@ nav_order: 2
 
 My publications in reverse chronological order. Check out my [projects](/projects/) for other interesting work I've done!
 
-
 <div class="publications">
 
 {% bibliography %}

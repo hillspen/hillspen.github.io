@@ -56,4 +56,23 @@ $(document).ready(function () {
   $('[data-toggle="popover"]').popover({
     trigger: "hover",
   });
+
+  // Prevent card modal from opening when clicking resource buttons
+  document.querySelectorAll(".project-card .btn").forEach(function (btn) {
+    btn.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+  });
+
+  document.querySelectorAll(".project-card").forEach(function (card) {
+    card.addEventListener("click", function (event) {
+      var projectId = card.getAttribute("data-project-id");
+      var projectData = window.projectsData[projectId];
+      if (projectData) {
+        document.getElementById("projectModalLabel").textContent = projectData.title;
+        document.getElementById("projectModalBody").innerHTML = projectData.html;
+        $("#projectModal").modal("show");
+      }
+    });
+  });
 });
