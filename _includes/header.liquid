@@ -59,7 +59,7 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% if p.nav and p.autogen == null and p.title != 'cv' %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -117,6 +117,10 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          <!-- Add direct CV link -->
+          <li class="nav-item">
+            <a class="nav-link" href="/assets/pdf/Spencer%20Hill%20CV.pdf" target="_blank" rel="noopener">CV</a>
+          </li>
           {% comment %}
             {% if site.search_enabled %}
               <!-- Search -->
