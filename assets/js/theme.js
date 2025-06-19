@@ -1,24 +1,7 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
-// Toggle between light and dark theme settings only.
-let toggleThemeSetting = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting == "light") {
-    setThemeSetting("dark");
-  } else {
-    setThemeSetting("light");
-  }
-};
+// Only apply system mode: follow user's OS preference for light/dark.
 
-// Change the theme setting and apply the theme.
-let setThemeSetting = (themeSetting) => {
-  localStorage.setItem("theme", themeSetting);
-  document.documentElement.setAttribute("data-theme-setting", themeSetting);
-  applyTheme();
-  updateThemeToggleIcon(themeSetting);
-};
-
-// Apply the computed dark or light theme to the website.
 let applyTheme = () => {
   let theme = determineComputedTheme();
 
@@ -248,57 +231,15 @@ let transTheme = () => {
   }, 500);
 };
 
-// Determine the expected state of the theme toggle, which can be "dark" or "light". Default is "light".
-let determineThemeSetting = () => {
-  let themeSetting = localStorage.getItem("theme");
-  if (themeSetting != "dark" && themeSetting != "light") {
-    themeSetting = "light";
-  }
-  return themeSetting;
-};
-
-// Determine the computed theme, which can be "dark" or "light". If the theme setting is
-// "system", the computed theme is determined based on the user's system preference.
+// Always use system mode
 let determineComputedTheme = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
-    const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    } else {
-      return "light";
-    }
+  const userPref = window.matchMedia;
+  if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
+    return "dark";
   } else {
-    return themeSetting;
+    return "light";
   }
 };
 
-// Update the theme toggle icon based on the current theme setting
-function updateThemeToggleIcon(themeSetting) {
-  const systemIcon = document.getElementById("light-toggle-system");
-  const darkIcon = document.getElementById("light-toggle-dark");
-  const lightIcon = document.getElementById("light-toggle-light");
-  if (themeSetting === "light") {
-    systemIcon.style.display = "none";
-    darkIcon.style.display = "block";
-    lightIcon.style.display = "none";
-  } else {
-    systemIcon.style.display = "none";
-    darkIcon.style.display = "none";
-    lightIcon.style.display = "block";
-  }
-}
-
-// Initialize theme and icon on page load
-let initTheme = () => {
-  let themeSetting = determineThemeSetting();
-  setThemeSetting(themeSetting);
-  document.addEventListener("DOMContentLoaded", function () {
-    const mode_toggle = document.getElementById("light-toggle");
-    mode_toggle.addEventListener("click", function () {
-      toggleThemeSetting();
-    });
-  });
-};
-
-initTheme();
+// Initialize theme on page load
+applyTheme();

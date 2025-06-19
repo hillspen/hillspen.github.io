@@ -8,11 +8,8 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-<p>
-  My publications in reverse chronological order. Check out my
-  <a href="/projects/" class="projects-link">projects</a>
-  for other interesting work I've done!
-</p>
+My publications in reverse chronological order. Check out my [projects](/projects/) for other interesting work I've done!
+
 
 <div class="publications">
 
