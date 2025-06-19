@@ -2,7 +2,7 @@
 layout: page
 title: Quantum Generative Adversarial Networks
 description: Created a quantum machine learning model capable of generating handwritten digits.
-img: assets/img/QGAN.png
+img: assets/img/MNIST.png
 importance: 2
 category:
 giscus_comments: true
@@ -23,67 +23,17 @@ slides: /assets/pdf/QGAN Slides.pdf
   {% endif %}
 </div>
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Quantum computing uses qbits (rather than bits) to represent data. While a bit is either 0 or 1, a qbit can be 0, 1, or both! This has many advantages (and disadvantages!), one of which is the ability to represent more data using comparitively fewer (q)bits. In the context of machine learning models, quantum computing allows us to define our model as a series of parametrized rotations, leading to lower complexity (in terms of the number of trainable parameters).
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+In this project, we created a quantum computing version of a generative adversarial network, known as a QGAN. In classical GANs, there is a discriminator model (which classifies a sample as real or fake) and a generative model (which creates new samples). They two are pitted against each other, improving adversarially. In the quantum realm, we are able to take advantage of entanglement to achieve more efficient training.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/QGAN.png" title="QGAN Architecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Architecture for a QGAN. 
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+We trained our QGAN to generate novel handwritten digits (using MNIST). We has to design a (very!) compressive autoencoder to reducde the 28x28 MNIST images to only 4 qubits. This method improved perceptually on the state-of-the-art QGAN architectures, which at the time used PCA to encode the images. We were quite limited by the number of qubits commercially available (in 2021 that number was 4). Nowadays, we would have been able to run our model on 27+ qubits. We presented this work at the Canadian Undergraduate Conference in AI (CUCAI) 2022 and published in their conference proceedings.
