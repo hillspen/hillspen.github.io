@@ -26,3 +26,5 @@ slides: /assets/pdf/3D Generation CUCAI.pdf
 It is important to machine learning models in the medical field to have access to a large amount of anonymized patient data to train on. This data, however, is often prohibitively expensive or time-consuming to obtain. One solution (at least at the time of our project in 2020) is to generate synthetic data which belongs to the distribution of patients without being conneted to an individual. Generative adversarial networks (GANs) are a machine learning model specifically designed to do just that.
 
 This project designed and implemented a tree-based graph convolutional generative adversarial network (TreeGAN) capable of generating 3D point clouds of the human body. It involved preprocessing meshes into point clouds (for computational savings), implemented graph convolutional networks, and training using the Wasserstein loss.
+
+Our work was presented at the Canadian Undergraduate Conference on AI (CUCAI) 2021 and published in the conference proceedings.

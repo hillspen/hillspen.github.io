@@ -45,3 +45,19 @@ $max-content-width: {{ site.max_width }};
   border-color: var(--global-theme-color) !important;
   text-decoration: none;
 }
+
+.social-top {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+.social-top .icon, .social-top i, .social-top svg {
+  font-size: 1.1em !important;
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+
+.desc {
+  margin-bottom: 0.25rem !important;
+}

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-# subtitle:
+subtitle: Master's student in Applied Mathematics @ Queen's University
 
 profile:
   align: right
@@ -15,14 +15,13 @@ profile:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+# announcements:
+#   enabled: false # includes a list of news items
+#   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+#   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
-Hi there! I'm Spencer Hill, a master's student in the Department of Mathematics and Statistics at Queen's University. I work on machine learning and information theory under the supervision of [Fady Alajaji](https://mast.queensu.ca/~fady/) and [Tamás Linder](https://mast.queensu.ca/~linder/). I hold a BASc (Engineering) degree from Queen's University, where I studied [Mathematics and Engineering](https://www.queensu.ca/mathstat/undergraduate/prospective-undergraduate/mthe) with an option in computing and communications (read: I was a mathematician with a coding side hustle).
+Hi there! I'm Spencer Hill, a master's student in the Department of [Mathematics and Statistics](https://www.queensu.ca/mathstat/) at [Queen's University](https://www.queensu.ca/). I work on machine learning and information theory under the supervision of [Fady Alajaji](https://mast.queensu.ca/~fady/) and [Tamás Linder](https://mast.queensu.ca/~linder/). I hold a BASc (Engineering) degree from Queen's University, where I studied [Mathematics and Engineering](https://www.queensu.ca/mathstat/undergraduate/prospective-undergraduate/mthe) with an option in computing and communications (read: I was a mathematician with a coding side hustle).
 
 I am broadly interested in problems that sit at the intersection of machine learning/artificial intelligence and mathematics. I am especially interested in investigating the theoretical limits of machine learning algorithms and designing ones which have provable guarantees (and can actually be implemented on a computer!). This has previously manifested as work on [faster Guassian processes for computational chemistry](/publications/), [GANs](/projects/), [Quantum Machine Learning](/projects/), [neural image compression](/projects/), and reinforcement learning.
 
