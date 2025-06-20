@@ -7,8 +7,6 @@ nav: true
 nav_order: 7
 ---
 
-Slides and other material for the talks I have given.
-
 {% assign talks = site.data.talks | sort: 'date' | reverse %}
 {% assign last_year = '' %}
 
@@ -28,7 +26,8 @@ Slides and other material for the talks I have given.
     {% else %}
       {{ talk.title }}
     {% endif %}
-    <span class="text-muted"> — {{ talk.location }}</span>
+    <br/>
+    <span class="text-muted"><em>{{ talk.description }}</em></span>
   </li>
 {% endfor %}
 </ul>

@@ -35,3 +35,5 @@ Standard lossy image compression techniques rely on linear transform coding, whi
 </div>
 
 This project mathematically formulates a nonlinear transform coding system as a pair of analysis and synthesis transforms, each parametrized by a neural network. The end-to-end system is trained to compress CT scans, an application of particular importance to low-bandwidth areas without easy access to health care services. A custom loss function is used to balance the distortion (difference) between the original and compressed image with the rate (size) of the compressed image. This project was implemented in Python, using Tensorflow for the neural networks.
+
+Our thesis won the 2023 Keyser Prize, which recognizes the best thesis of the Mathematics and Engineering program.

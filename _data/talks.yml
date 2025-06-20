@@ -1,22 +1,36 @@
-- date: 2025-05-09
-  title: "You Cannot Feed Two Birds with One Score: the Accuracy-Naturalness Tradeoff in Translation"
-  location: "HUN-REN AI Symposium 2025"
-  type: "Invited talk"
-  link: "https://example.com/slides.pdf"
-  description: "Invited talk at the HUN-REN AI Symposium 2025"
-- date: 2025-03-05
-  title: "Data Compression with Relative Entropy Coding"
-  location: "Information Theory Seminar, Cambridge"
+- date: 2025-06-22
+  title: "Exact Channel Simulation under Exponential Cost"
+  type: "Poster Presentation"
+  link: "/assets/pdf/RenyiExactSamplingPoster.pdf"
+  description: "Recent Results sesssion poster presentation at the International Symposium on Information Theory (ISIT) 2025, Ann Arbor, Michigan"
+- date: 2025-05-27
+  title: "Communication Complexity of Exact Sampling"
+  location: "Stochastic Control (and Related Fields) Seminar, Queen's University"
   type: "Seminar"
-  description: "Talk at the Information Theory Seminar at the Centre for Mathematical Sciences, Cambridge"
-- date: 2025-02-04
-  title: "Data Compression with Relative Entropy Coding"
-  location: "PhD thesis defence"
-  type: "Thesis defence"
-  description: "Presentation for PhD thesis defence"
-- date: 2024-11-13
-  title: "Adaptive Compression and Learning"
-  location: "Machine Learning Meetup, Boston"
-  type: "Meetup"
-  link: "https://example.com/adaptive-compression.pdf"
-  description: "Talk at the Boston Machine Learning Meetup"
+  description: "Research talk at the Stochastic Control (and Related Fields) Seminar at Queen's University, Kingston, ON"
+- date: 2025-03-14
+  title: "Mathematical Introduction to Deep Learning"
+  location: "Stochastic Control (and Related Fields) Seminar, Queen's University"
+  type: "Seminar"
+  description: "Introductory tutorial at the Stochastic Control (and Related Fields) Seminar at Queen's University, Kingston, ON"
+- date: 2023-04-01
+  title: "Data Compression with Nonlinear Transform Coding using Artificial Neural Networks"
+  type: "Undergraduate thesis"
+  link: "/assets/pdf/MTHEThesis.pdf"
+  description: "Presentation for undergraduate thesis, Kingston, ON"
+- date: 2023-03-05
+  title: "Nonlinear Transform Coding using Artificial Neural Networks"
+  type: "Invited"
+  description: "Invited talk at the 2023 Canadian Undergraduate Conference on AI (CUCAI), Kingston, ON"
+- date: 2022-04-02
+  title: "Quantum Generative Adversarial Networks"
+  link: "/assets/pdf/QGAN Slides.pdf"
+  description: "Conference presentation at CUCAI 2022, Kingston, ON"
+- date: 2021-03-07
+  title: "3D Human Body Shape Generation"
+  link: "/assets/pdf/3D Generation CUCAI.pdf"
+  description: "Conference presentation at CUCAI 2021, Virtual"
+- date: 2021-12-06
+  title: "Local Gaussian process regression for interatomic particles"
+  link: "/assets/pdf/QGAN Slides.pdf"
+  description: "Conference presentation at the 2021 Materials Research Society Fall Meeting, Boston, MA"
