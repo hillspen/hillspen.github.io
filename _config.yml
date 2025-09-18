@@ -8,7 +8,7 @@ middle_name:
 last_name: Hill
 contact_note: >
   Please do not hesitate to reach out to me via email!
-description: Spencer Hill is a researcher in machine learning and information theory at Queen's University.  # the ">" symbol means to ignore newlines until "footer_text:"
+description: Spencer Hill is a researcher in machine learning and information theory at Queen's University. # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
