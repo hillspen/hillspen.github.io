@@ -29,6 +29,6 @@ Recently, my master's research has focused on the theory of channel simulation, 
 
 I am also currently collaborating with researchers from the [Queen's University Smith School of Business](https://www.juewang.ca/) and [Natural Resources Canada](https://cfs.nrcan.gc.ca/employees/read/dyemshan) to design reinforcement learning algorithms to optimally track the spread of invasive species.
 
-From October 20 until November 21, I am a visiting researcher at the [University of Pompeu Fabra](https://www.upf.edu/en/), in Barcelona, Spain hosted by [Gergely Neu](https://cs.bme.hu/~gergo/).
+From October 20 until November 21, I am a visiting researcher at the [University of Pompeu Fabra](https://www.upf.edu/en/) in Barcelona, Spain hosted by [Gergely Neu](https://cs.bme.hu/~gergo/).
 
 For more information, check out my <a href="/assets/pdf/Spencer%20Hill%20CV.pdf" target="_blank">CV</a>, [publications](/publications/), [projects](/projects/), or send me an <a href="mailto:spencer.hill@queensu.ca">email</a>!
