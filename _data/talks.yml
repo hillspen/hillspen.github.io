@@ -1,9 +1,21 @@
+- date: 2025-10-27
+  title: "Catch Me If You Can: An Optimal Pest Survey Strategy to Delimit Biological Invasions"
+  type: "Conference"
+  location: "2025 INFORMS Annual Meeting"
+  link: "/assets/pdf/ INFORMS Talk Final.pdf"
+  description: "Conference presentation at the 2025 INFORMS Annual Meeting in Atlanta, Georgia"
+- date: 2025-10-22
+  title: "Exact Channel Simulation under Exponential Cost"
+  type: "Seminar"
+  location: "University of Pompeu Fabra, Barcelona, Spain"
+  link: "/Users/spencer/hillspen.github.io/assets/pdf/UPF_Seminar_Talk.pdf"
+  description: "Seminar talk in the Artificial Intelligence group at the University of Pompeu Fabra in Barcelona"
 - date: 2025-09-18
   title: "Exact Channel Simulation under Exponential Cost"
   type: "Conference"
   location: "61st Allerton Conference on Communication, Control, and Computing"
   link: "/assets/pdf/Allerton Talk Final.pdf"
-  description: "Conference presentation at 2025 Allerton Conference in Urbana-Champaign, Illinois"
+  description: "Conference presentation at the 2025 Allerton Conference in Urbana-Champaign, Illinois"
 - date: 2025-08-14
   title: Communication Complexity of Exact Sampling under Rényi Information
   type: "Invited"
