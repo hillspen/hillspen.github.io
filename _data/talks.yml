@@ -1,3 +1,9 @@
+- date:2025-12-06
+  title: "Communication Complexity of Exact Sampling under Exponential Cost"
+  type: "Conference"
+  location: "2025 Canadian Mathematical Society Winter Meeting"
+  link: "/assets/pdf/CMS_Meeting_Talk.pdf"
+  description: "Invited talk in the Mathematics of Machine Learning session at the CMS Winter Meeting"
 - date: 2025-10-27
   title: "Catch Me If You Can: An Optimal Pest Survey Strategy to Delimit Biological Invasions"
   type: "Conference"
