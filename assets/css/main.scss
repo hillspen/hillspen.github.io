@@ -45,16 +45,31 @@ $max-content-width: {{ site.max_width }};
   text-decoration: none;
 }
 
+// Icons are taken out of the text flow so they don't change the subtitle's
+// line spacing, and pinned to the bottom-right of the header, just above the
+// headshot. Tweak `bottom` to move them: more negative = closer to the photo.
+.about-header-row {
+  position: relative;
+}
 .social-top {
+  position: absolute;
+  right: 0;
+  bottom: -0.5rem;
+  z-index: 1;
   display: flex;
   justify-content: flex-end;
   gap: 0.5em;
-  margin-bottom: 0.5em;
+  margin: 0;
+}
+@media (max-width: 575.98px) {
+  .social-top {
+    position: static;
+  }
 }
 .social-top .icon, .social-top i, .social-top svg {
-  font-size: 1.1em !important;
-  width: 1.5em !important;
-  height: 1.5em !important;
+  font-size: 1.375em !important;
+  width: 1.875em !important;
+  height: 1.875em !important;
 }
 
 .desc {
