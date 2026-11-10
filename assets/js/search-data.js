@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Some cool projects that I&#39;ve done.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "nav-talks",
           title: "talks",
           description: "Slides and other material for some of the talks I have given.",
@@ -35,21 +28,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "projects-nonlinear-transform-coding-using-neural-networks",
-          title: 'Nonlinear transform coding using neural networks',
-          description: "Undergraduate thesis project on compressing CT scans using neural networks.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project.html";
-            },},{id: "projects-quantum-generative-adversarial-networks",
-          title: 'Quantum Generative Adversarial Networks',
-          description: "Created a quantum machine learning model capable of generating handwritten digits.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project.html";
-            },},{id: "projects-3d-human-body-generation",
-          title: '3D Human Body Generation',
-          description: "Applied the TreeGAN architecture to generate 3D point clouds of the human body.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project.html";
             },},{
         id: 'social-email',
         title: 'email',
