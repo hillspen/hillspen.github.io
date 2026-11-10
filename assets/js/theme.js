@@ -241,5 +241,15 @@ let determineComputedTheme = () => {
   }
 };
 
-// Initialize theme on page load
-applyTheme();
+// Initialize theme on page load. Called from _includes/head.liquid *after* the
+// highlight_theme_light/dark stylesheets exist (calling applyTheme() at the top
+// of this file ran before they existed, crashed in setHighlight(), and left the
+// page without data-theme -> light page with dark tables, i.e. invisible text).
+let initTheme = () => {
+  applyTheme();
+
+  // Follow the OS if the user switches light/dark while the page is open.
+  if (window.matchMedia) {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", applyTheme);
+  }
+};
