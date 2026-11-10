@@ -21,7 +21,7 @@ announcements:
   limit: 7 # only the first 7 items in _includes/news.md are shown
 ---
 
-Hi there! I'm Spencer Hill, a first-year computer science PhD at the University of Toronto and the [Vector Institute](https://vectorinstitute.ai/) supervised by [Chris Maddison](https://www.cs.toronto.edu/~cmaddis/) and [Murat Erdogdu](https://www.cs.toronto.edu/~erdogdu/index.html). My research aims to understand and improve modern deep learning systems. Recently, I have been thinking about fundamental questions in pretraining, especially around tokenization and scaling laws.
+Hi there! I'm Spencer Hill, a first-year computer science PhD student at the University of Toronto and the [Vector Institute](https://vectorinstitute.ai/), supervised by [Chris Maddison](https://www.cs.toronto.edu/~cmaddis/) and [Murat Erdogdu](https://www.cs.toronto.edu/~erdogdu/index.html). My research aims to understand and improve modern deep learning systems. Recently, I have been thinking about fundamental questions in pretraining, especially around tokenization and scaling laws.
 
 Previously, I completed my MASc degree in mathematics at Queen's University under the supervision of [Fady Alajaji](https://mast.queensu.ca/~fady/) and [Tamás Linder](https://tamas-linder.github.io/). There, I worked on data compression and information theory, in particular the problem of [channel simulation/relative entropy coding](https://hdl.handle.net/1974/36632). Further back, I hold a BASc (Engineering) degree from Queen's University, where I studied [Mathematics and Engineering](https://www.queensu.ca/mathstat/undergraduate/prospective-undergraduate/mthe).
 
