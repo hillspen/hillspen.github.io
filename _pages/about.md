@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Master's student in Applied Mathematics @ Queen's University
+subtitle: Computer Science PhD Student @ UofT
 
 profile:
   align: right
@@ -21,14 +21,8 @@ social: true # includes social icons at the bottom of the page
 #   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
-Hi there! I'm Spencer Hill, a master's student in the Department of [Mathematics and Statistics](https://www.queensu.ca/mathstat/) at [Queen's University](https://www.queensu.ca/). I work on machine learning and information theory under the supervision of [Fady Alajaji](https://mast.queensu.ca/~fady/) and [Tamás Linder](https://mast.queensu.ca/~linder/). I hold a BASc (Engineering) degree from Queen's University, where I studied [Mathematics and Engineering](https://www.queensu.ca/mathstat/undergraduate/prospective-undergraduate/mthe) with an option in computing and communications (read: I was a mathematician with a coding side hustle).
+Hi there! I'm Spencer Hill, a first-year computer science PhD at the University of Toronto and [Vector Institute](https://vectorinstitute.ai/) supervised by [Chris Maddison](https://www.cs.toronto.edu/~cmaddis/) and [Murat Erdogdu](https://www.cs.toronto.edu/~erdogdu/index.html). My research aims to develop a principled understanding of deep learning, and leverage this understanding to develop more efficient and reliable systems.
 
-I am broadly interested in problems that sit at the intersection of machine learning/artificial intelligence and mathematics. I am especially interested in investigating the theoretical limits of machine learning algorithms and designing ones which have provable guarantees (and can actually be implemented on a computer!). This has previously manifested as work on [faster Guassian processes for computational chemistry](/publications/), [GANs](/projects/), [Quantum Machine Learning](/projects/), [neural image compression](/projects/), and reinforcement learning.
+Previously, I completed my MASc degree in mathematics at [Queen's University](https://www.queensu.ca/) under the supervision of [Fady Alajaji](https://mast.queensu.ca/~fady/) and [Tamás Linder](https://mast.queensu.ca/~linder/). There, I worked on data compression and information theory, and in particular the problem of [channel simulation/relative entropy coding](https://hdl.handle.net/1974/36632). Further back, I hold a BASc (Engineering) degree from Queen's University, where I studied [Mathematics and Engineering](https://www.queensu.ca/mathstat/undergraduate/prospective-undergraduate/mthe).
 
-Recently, my master's research has focused on the theory of channel simulation, which is the problem of communicating a random sample from a distribution at low cost. This idea has recently been applied to [neural-network-based compression](https://proceedings.neurips.cc/paper/2020/hash/ba053350fe56ed93e64b3e769062b680-Abstract.html) to make the system end-to-end differentiable and able to be trained using gradient descent. My research (so far) has generalized the theoretical limits of channel simulation to an [exponential cost](https://www.arxiv.org/abs/2506.12219).
-
-I am also currently collaborating with researchers from the [Queen's University Smith School of Business](https://www.juewang.ca/) and [Natural Resources Canada](https://cfs.nrcan.gc.ca/employees/read/dyemshan) to design reinforcement learning algorithms to optimally track the spread of invasive species.
-
-From October 20 until November 21, I was a visiting researcher at the [Universitat Pompeu Fabra](https://www.upf.edu/en/) in Barcelona, Spain hosted by [Gergely Neu](https://cs.bme.hu/~gergo/).
-
-For more information, check out my <a href="/assets/pdf/Spencer%20Hill%20CV.pdf" target="_blank">CV</a>, [publications](/publications/), [projects](/projects/), or send me an <a href="mailto:spencer.hill@queensu.ca">email</a>!
+My email is \[firstname\] @ cs.toronto.edu.

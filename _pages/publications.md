@@ -8,7 +8,7 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-My publications in reverse chronological order. Check out my [projects](/projects/) for other interesting work I've done!
+My publications in reverse chronological order.
 
 <div class="publications">
 
