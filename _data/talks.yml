@@ -1,3 +1,7 @@
+- date: 2026-11-11
+  location: IEEE Information Theory Workshop
+  link: "/assets/pdf/ITW_2026.pdf"
+  description: "Conference presentation at the IEEE Information Theory Workshop in Tempe, Arizona"
 - date: 2026-08-11
   title: Rejection Sampling is Optimal for Relative Entropy Coding
   type: "Conference"
