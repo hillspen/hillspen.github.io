@@ -1,7 +1,9 @@
 {% comment %}
   Renders the news list from _includes/news.md.
   Each item is a line "- Mon YYYY | text"; items appear in file order (newest first).
-  On the homepage (include.limit), only the first page.announcements.limit items are shown.
+  On the homepage (include.limit), the first page.announcements.limit items are shown;
+  any items beyond that go in a collapsed "older news" section, which only appears
+  once there are more items than the limit.
 {% endcomment %}
 {% capture news_source %}{% include news.md %}{% endcapture %}
 {% assign news_lines = news_source | newline_to_br | split: '<br />' %}
@@ -10,24 +12,44 @@
 {% else %}
   {% assign news_limit = 1000 %}
 {% endif %}
+{% assign news_count = 0 %}
+{% capture recent_rows %}{% endcapture %}
+{% capture older_rows %}{% endcapture %}
+{% for raw_line in news_lines %}
+  {% assign line = raw_line | strip %}
+  {% assign prefix = line | slice: 0, 2 %}
+  {% if prefix != '- ' %}{% continue %}{% endif %}
+  {% assign parts = line | remove_first: '- ' | split: ' | ' %}
+  {% assign news_date = parts | first | strip %}
+  {% assign news_text = line | remove_first: '- ' | remove_first: parts[0] | remove_first: ' | ' | strip %}
+  {% capture row %}
+    <tr>
+      <th scope="row" style="width: 20%">{{ news_date }}</th>
+      <td>{{ news_text | replace: '|', '\|' | markdownify | remove: '<p>' | remove: '</p>' | strip }}</td>
+    </tr>
+  {% endcapture %}
+  {% if news_count < news_limit %}
+    {% assign recent_rows = recent_rows | append: row %}
+  {% else %}
+    {% assign older_rows = older_rows | append: row %}
+  {% endif %}
+  {% assign news_count = news_count | plus: 1 %}
+{% endfor %}
 <div class="news">
   <div class="table-responsive">
     <table class="table table-sm table-borderless">
-      {% assign news_count = 0 %}
-      {% for raw_line in news_lines %}
-        {% assign line = raw_line | strip %}
-        {% assign prefix = line | slice: 0, 2 %}
-        {% if prefix != '- ' %}{% continue %}{% endif %}
-        {% if news_count >= news_limit %}{% break %}{% endif %}
-        {% assign parts = line | remove_first: '- ' | split: ' | ' %}
-        {% assign news_date = parts | first | strip %}
-        {% assign news_text = line | remove_first: '- ' | remove_first: parts[0] | remove_first: ' | ' | strip %}
-        <tr>
-          <th scope="row" style="width: 20%">{{ news_date }}</th>
-          <td>{{ news_text | replace: '|', '\|' | markdownify | remove: '<p>' | remove: '</p>' | strip }}</td>
-        </tr>
-        {% assign news_count = news_count | plus: 1 %}
-      {% endfor %}
+      {{ recent_rows }}
     </table>
   </div>
+  {% assign older_rows_text = older_rows | strip %}
+  {% if older_rows_text != '' %}
+    <details class="older-news">
+      <summary>older news</summary>
+      <div class="table-responsive">
+        <table class="table table-sm table-borderless">
+          {{ older_rows }}
+        </table>
+      </div>
+    </details>
+  {% endif %}
 </div>

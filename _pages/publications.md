@@ -8,7 +8,9 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 
-For an up-to-date list of publications, see my [Google Scholar](https://scholar.google.ca/citations?user=lrVy5TAAAAAJ&hl=en).
+For an up-to-date list of publications, see my [Google Scholar](https://scholar.google.ca/citations?user=lrVy5TAAAAAJ&hl=en). 
+
+\* Denotes equal contribution.
 <div class="publications">
 
 {% bibliography %}

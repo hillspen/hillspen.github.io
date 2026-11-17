@@ -75,3 +75,22 @@ $max-content-width: {{ site.max_width }};
 .desc {
   margin-bottom: 0.25rem !important;
 }
+
+// "older news" toggle under the news table (only rendered when news overflows the limit)
+.older-news {
+  margin-top: 0.25rem;
+
+  summary {
+    cursor: pointer;
+    color: var(--global-theme-color);
+    width: fit-content;
+  }
+
+  summary:hover {
+    text-decoration: underline;
+  }
+
+  .table-responsive {
+    margin-top: 0.5rem;
+  }
+}
